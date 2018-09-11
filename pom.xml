@@ -7,6 +7,13 @@
   <version>1.0-SNAPSHOT</version>
   <name>webapp Maven Webapp</name>
   <url>http://maven.apache.org</url>
+  <distributionManagement>
+    <repository>
+      <id>deployment</id>
+      <name>internal releases</name>
+      <url>http://localhost:8585/nexus-2.14.4-03/content/repositories/Sample_rel/</url>
+    </repository>
+  </distributionManagement> 
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
